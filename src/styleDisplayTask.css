@@ -1,0 +1,16 @@
+#displayTask{
+    display: flex;
+    flex-direction: column;
+    margin: 3vw;
+    border: 2px black;
+    padding: 4vw;
+    border-radius: 3vw;
+    background-color: #F0F8FF;
+}
+
+#title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
