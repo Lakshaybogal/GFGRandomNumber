@@ -1,0 +1,48 @@
+
+body{
+font-family: fantasy;
+margin: 0;
+padding: 0;
+
+}
+
+.nav {
+  background-color: #fff;
+  
+}
+
+.card{
+  padding: 2rem;
+  
+}
+.cardContent
+{
+  padding: 20px 20px;
+  text-align: center;
+  border-radius: 30px;
+  background-color:aliceblue;
+
+}
+
+.heading{
+  font-size: larger;
+  font-weight: 800;
+}
+.btn{
+  height: 30px;
+  background-color: antiquewhite;
+  
+}
+
+#icon{
+  color: green;
+  font-size: 30px;
+}
+
+.footer{
+  
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 0.3vh;
+}
