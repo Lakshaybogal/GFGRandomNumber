@@ -38,3 +38,11 @@ padding: 0;
   color: green;
   font-size: 30px;
 }
+
+.footer{
+  
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 0.3vh;
+}

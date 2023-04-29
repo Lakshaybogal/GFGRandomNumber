@@ -1,22 +1,11 @@
 import React, { useState } from "react";
 import "./App.css";
 import "./styleDisplayTask.css";
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Card,
-  Button,
-  CardContent,
-  Link,
-  BottomNavigation,
-  Divider
-} from "@mui/material";
+import { AppBar, Toolbar, Typography, Card, Button, CardContent, Link, BottomNavigation} from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import PrintTaskDetails from './PrintTask'
-
+import PrintTaskDetails from './PrintTask';
 import logo from "./GFGLOGOBLACK.svg";
 
 export default function App() {
@@ -26,7 +15,7 @@ export default function App() {
     setnum(Math.ceil(Math.random() * 14));
   };
 
-  {/*The data variable contains the task description:*/ }
+
   let data = [
     {
       sno: 1,
@@ -46,7 +35,7 @@ export default function App() {
     },
     {
       sno: 5,
-      des: "Tell us your go to : Pick up line or shayari"
+      des: "Pick up line or Shayari"
     },
     {
       sno: 6,
@@ -98,10 +87,12 @@ export default function App() {
         </Toolbar>
       </AppBar>
 
-      <Card className="card">
+      <Card className="card" style={{
+        borderRadius:"0",
+      }}>
         <CardContent className="cardContent">
           <Typography className="heading" variant="h3" gutterBottom>
-            Random Number Generator
+            Generate Task Number
           </Typography>
 
           <Typography variant="h1">{randomnum}</Typography>
@@ -119,16 +110,13 @@ export default function App() {
         </CardContent>
       </Card>
 
-      <Divider />
-      {/*The Task Details:  */}
-      {/* <Card className="card">
-        <CardContent className="cardContent">
-        </CardContent>
-      </Card> */}
-      <PrintTaskDetails taskData={data} />
-      <Divider />
-      {/* footer logos:  */}
-      <BottomNavigation>
+      <Card style={{
+        borderRadius:"0",
+      }}>
+        <PrintTaskDetails taskData={data} />
+      </Card>
+
+      <BottomNavigation className="footer" >
         <Typography
           style={{
             padding: "2%",
@@ -173,6 +161,7 @@ export default function App() {
           </Link>
         </Typography>
       </BottomNavigation>
+
     </>
   );
 };
